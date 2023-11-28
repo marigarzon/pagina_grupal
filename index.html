@@ -16,8 +16,8 @@
             case 0: {
               $("#slider-1").fadeOut(400);
               $("#slider-2").delay(400).fadeIn(400);
-              $("#sButton1").removeClass("bg-purple-800");
-              $("#sButton2").addClass("bg-purple-800");
+              $("#sButton1").removeClass("bg-red-800");
+              $("#sButton2").addClass("bg-red-800");
               cont = 1;
 
               break;
@@ -25,8 +25,8 @@
             case 1: {
               $("#slider-2").fadeOut(400);
               $("#slider-1").delay(400).fadeIn(400);
-              $("#sButton2").removeClass("bg-purple-800");
-              $("#sButton1").addClass("bg-purple-800");
+              $("#sButton2").removeClass("bg-red-800");
+              $("#sButton1").addClass("bg-red-800");
 
               cont = 0;
 
@@ -44,8 +44,8 @@
       function sliderButton1() {
         $("#slider-2").fadeOut(400);
         $("#slider-1").delay(400).fadeIn(400);
-        $("#sButton2").removeClass("bg-purple-800");
-        $("#sButton1").addClass("bg-purple-800");
+        $("#sButton2").removeClass("bg-red-800");
+        $("#sButton1").addClass("bg-red-800");
         reinitLoop(4000);
         cont = 0;
       }
@@ -53,15 +53,15 @@
       function sliderButton2() {
         $("#slider-1").fadeOut(400);
         $("#slider-2").delay(400).fadeIn(400);
-        $("#sButton1").removeClass("bg-purple-800");
-        $("#sButton2").addClass("bg-purple-800");
+        $("#sButton1").removeClass("bg-red-800");
+        $("#sButton2").addClass("bg-red-800");
         reinitLoop(4000);
         cont = 1;
       }
 
       $(window).ready(function () {
         $("#slider-2").hide();
-        $("#sButton1").addClass("bg-purple-800");
+        $("#sButton1").addClass("bg-red-800");
 
         loopSlider();
       });
@@ -167,6 +167,8 @@
     </header>
   </section>
 
+
+<!-- carousel -->
   <section>
     <!-- component -->
     <body>
@@ -175,19 +177,19 @@
           <div
             class="bg-cover bg-center h-auto text-white py-24 px-10 object-fill"
             style="
-              background-image: url(https://images.unsplash.com/photo-1544427920-c49ccfb85579?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1422&q=80);
+              background-image: url(img/foto4.jpg);
             "
           >
             <div class="md:w-1/2">
-              <p class="font-bold text-sm uppercase">Services</p>
-              <p class="text-3xl font-bold">Hello world</p>
+              <p class="font-bold text-sm uppercase">Nuestros servicios</p>
+              <p class="text-3xl font-bold">Descubre el placer de cocinar</p>
               <p class="text-2xl mb-10 leading-none">
-                Carousel with TailwindCSS and jQuery
+                con nuestras recetas
               </p>
               <a
-                href="#"
-                class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800"
-                >Contact us</a
+                href="recetas.html"
+                class="bg-red-900 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800"
+                >Recetas</a
               >
             </div>
           </div>
@@ -199,18 +201,18 @@
           <div
             class="bg-cover bg-top h-auto text-white py-24 px-10 object-fill"
             style="
-              background-image: url(https://images.unsplash.com/photo-1544144433-d50aff500b91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+              background-image: url(img/foto5.jpg);
             "
           >
-            <p class="font-bold text-sm uppercase">Services</p>
-            <p class="text-3xl font-bold">Hello world</p>
+            <p class="font-bold text-sm uppercase">Nuestros servicios</p>
+            <p class="text-3xl font-bold">Los mejores utensilios</p>
             <p class="text-2xl mb-10 leading-none">
-              Carousel with TailwindCSS and jQuery
+              al alcance de tu mano
             </p>
             <a
-              href="#"
-              class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800"
-              >Contact us</a
+              href="ArticulosCocina.html"
+              class="bg-red-900 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800"
+              >Articulos de Cocina</a
             >
           </div>
           <!-- container -->
@@ -221,12 +223,12 @@
         <button
           id="sButton1"
           onclick="sliderButton1()"
-          class="bg-purple-400 rounded-full w-4 pb-2"
+          class="bg-red-900 rounded-full w-4 pb-2"
         ></button>
         <button
           id="sButton2"
           onclick="sliderButton2() "
-          class="bg-purple-400 rounded-full w-4 p-2"
+          class="bg-red-900 rounded-full w-4 p-2"
         ></button>
       </div>
     </body>
