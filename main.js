@@ -1,7 +1,7 @@
 // Crea una lista de los elementos que quieres buscar
 var list = Array.from(document.querySelectorAll('.recipe-title')).map(function(element) {
-    return { text: element.textContent };
-});
+    return { text: element.textContent.toLowerCase() };
+  });
 
 // Crea una nueva instancia de Fuse con la lista y las opciones
 var fuse = new Fuse(list, { keys: ['text'] });
@@ -16,7 +16,7 @@ form.addEventListener('submit', function(event) {
     event.preventDefault();
   
     // Realiza la búsqueda
-    var results = fuse.search(input.value);
+    var results = fuse.search(input.value.toLowerCase());
   
     // Obtiene el contenedor de resultados
     var resultsContainer = document.getElementById('results');
