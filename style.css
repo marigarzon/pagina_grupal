@@ -1,3 +1,14 @@
+/* CSS */
+#menu {
+    display: none; /* Por defecto, el menú está oculto */
+  }
+  
+  @media screen and (max-width: 768px) { /* Cuando la anchura de la ventana es 768px o menos */
+    #menu {
+      display: block; /* El menú se muestra */
+    }
+  }
+
 .hamburger-menu {
     display: flex;
     flex-direction: column;
