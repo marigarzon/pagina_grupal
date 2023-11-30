@@ -12,22 +12,25 @@ var input = document.getElementById('form-subscribe-Search');
 
 // Cuando se envía el formulario, realiza la búsqueda
 form.addEventListener('submit', function(event) {
-    // Evita que la página se recargue cuando se envía el formulario
-    event.preventDefault();
-  
-    // Realiza la búsqueda
-    var results = fuse.search(input.value.toLowerCase());
-  
-    // Obtiene el contenedor de resultados
-    var resultsContainer = document.getElementById('results');
-  
-    // Limpia los resultados anteriores
-    resultsContainer.innerHTML = '';
-  
-    // Para cada resultado, crea un nuevo elemento y agrégalo al contenedor de resultados
-    results.forEach(function(result) {
-      var resultElement = document.createElement('p');
-      resultElement.textContent = result.item.text;
-      resultsContainer.appendChild(resultElement);
-    });
-  });
+        // Evita que la página se recargue cuando se envía el formulario
+        event.preventDefault();
+    
+        // Realiza la búsqueda
+        var results = fuse.search(input.value.toLowerCase());
+    
+        // Obtiene el contenedor de resultados
+        var resultsContainer = document.getElementById('results');
+    
+        // Limpia los resultados anteriores
+        resultsContainer.innerHTML = '';
+    
+        // Para cada resultado, crea un nuevo elemento y agrégalo al contenedor de resultados
+        results.forEach(function(result) {
+            var resultElement = document.createElement('p');
+            resultElement.textContent = result.item.text;
+            resultsContainer.appendChild(resultElement);
+        });
+
+        // Desplaza la página hasta los resultados
+        resultsContainer.scrollIntoView({ behavior: 'smooth' });
+});
