@@ -39,10 +39,321 @@
 </section>
 
 <body>
-    
+    <!-- sobre nosotros -->
+  <section class="bg-white dark:bg-white-900">
+    <div class="container px-6 py-10 mx-auto">
+      <h1
+        class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white"
+      >
+        Quienes somos
+      </h1>
 
+      <div class="mt-8 lg:-mx-6 lg:flex lg:items-center">
+        <img
+          class="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96"
+          src="img/foto1.jpeg"
+          alt=""
+        />
 
+        <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6">
+          <p class="text-sm text-yellow-700 uppercase">nosotros</p>
 
+          <a
+            href="#"
+            class="block mt-4 text-2xl font-semibold text-gray-800 hover:underline dark:text-white"
+          >
+            Todo lo que debes saber.
+          </a>
+
+          <p
+            class="mt-3 text-sm text-black-500 dark:text-black-300 md:text-sm"
+          >
+            Nosotros somos un blog sobre recetas y articulos de cocina donde
+            te enseñamos hasta las recetas mas tradicionales a unos perfectos
+            postres para tus cenas o reuniones, tambien te recomendamos
+            excelentes articulos de cocina para que tengas tu cocina de la
+            mejor calidad.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+<!--
+ misio y vision
+-->
+<section>
+<link
+  href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css"
+  rel="stylesheet"
+/>
+
+<script type="module">
+  import KeenSlider from 'https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm'
+
+  const keenSlider = new KeenSlider(
+    '#keen-slider',
+    {
+      loop: true,
+      slides: {
+        origin: 'center',
+        perView: 1.25,
+        spacing: 16,
+      },
+      breakpoints: {
+        '(min-width: 1024px)': {
+          slides: {
+            origin: 'auto',
+            perView: 1.5,
+            spacing: 32,
+          },
+        },
+      },
+    },
+    []
+  )
+
+  const keenSliderPrevious = document.getElementById('keen-slider-previous')
+  const keenSliderNext = document.getElementById('keen-slider-next')
+
+  const keenSliderPreviousDesktop = document.getElementById(
+    'keen-slider-previous-desktop'
+  )
+  const keenSliderNextDesktop = document.getElementById(
+    'keen-slider-next-desktop'
+  )
+
+  keenSliderPrevious.addEventListener('click', () => keenSlider.prev())
+  keenSliderNext.addEventListener('click', () => keenSlider.next())
+
+  keenSliderPreviousDesktop.addEventListener('click', () => keenSlider.prev())
+  keenSliderNextDesktop.addEventListener('click', () => keenSlider.next())
+</script>
+
+<section class="bg-gray-50">
+  <div
+    class="mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24"
+  >
+    <div
+      class="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:items-center lg:gap-16"
+    >
+      <div class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          Rincon gastronomico
+        </h2>
+
+        <p class="mt-4 text-gray-700">
+        Para nosotros es importante que nos conozcas entonces te invitamos a conocer nuestra vision y mision.
+        </p>
+
+        <div class="hidden lg:mt-8 lg:flex lg:gap-4">
+          <button
+            aria-label="Previous slide"
+            id="keen-slider-previous-desktop"
+            class="rounded-full border border-rose-600 p-3 text-rose-600 transition hover:bg-rose-600 hover:text-white"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-5 w-5 rtl:rotate-180"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 19.5L8.25 12l7.5-7.5"
+              />
+            </svg>
+          </button>
+
+          <button
+            aria-label="Next slide"
+            id="keen-slider-next-desktop"
+            class="rounded-full border border-rose-600 p-3 text-rose-600 transition hover:bg-rose-600 hover:text-white"
+          >
+            <svg
+              class="h-5 w-5 rtl:rotate-180"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9 5l7 7-7 7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="-mx-6 lg:col-span-2 lg:mx-0">
+        <div id="keen-slider" class="keen-slider">
+          <div class="keen-slider__slide">
+            <blockquote
+              class="flex h-full flex-col justify-between bg-yellow-500 p-6 shadow-sm sm:p-8 lg:p-12"
+            >
+              <div>
+                <div class="mt-4">
+                  <p class="text-2xl font-bold text-rose-600 sm:text-3xl">
+                      Mision
+                  </p>
+
+                  <p class="mt-4 leading-relaxed text-black-700">
+                    En rincon gastronomico, nos comprometemos a inspirar y facilitar la experiencia culinaria de nuestros usuarios, proporcionando recetas creativas, consejos prácticos y recomendaciones de productos de cocina. Buscamos ser la fuente confiable que nutre la pasión por la cocina, fomentando la conexión, la diversidad y la creatividad en cada hogar.
+                  </p>
+                </div>
+              </div>
+
+              <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                &mdash; 
+              </footer>
+            </blockquote>
+          </div>
+
+          <div class="keen-slider__slide">
+            <blockquote
+              class="flex h-full flex-col justify-between bg-yellow-500 p-6 shadow-sm sm:p-8 lg:p-12"
+            >
+              <div>
+                
+
+                <div class="mt-4">
+                  <p class="text-2xl font-bold text-rose-600 sm:text-3xl">
+                    Vision
+                  </p>
+
+                  <p class="mt-4 leading-relaxed text-black-700">
+                    Visualizamos un mundo donde cada individuo disfruta de la cocina como una expresión de creatividad y amor. En [Nombre de tu página], aspiramos a ser líderes en el espacio culinario online, ofreciendo contenido innovador y útil que empodere a las personas para descubrir, compartir y disfrutar de la alegría de cocinar. Buscamos crear una comunidad vibrante y conectada que celebre la diversidad de sabores y culturas a través de nuestras recetas y recomendaciones de artículos de cocina.
+                  </p>
+                </div>
+              </div>
+
+              <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                &mdash; 
+              </footer>
+            </blockquote>
+          </div>
+
+          
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 flex justify-center gap-4 lg:hidden">
+      <button
+        aria-label="Previous slide"
+        id="keen-slider-previous"
+        class="rounded-full border border-rose-600 p-4 text-rose-600 transition hover:bg-rose-600 hover:text-white"
+      >
+        <svg
+          class="h-5 w-5 -rotate-180 transform"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9 5l7 7-7 7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          />
+        </svg>
+      </button>
+
+      <button
+        aria-label="Next slide"
+        id="keen-slider-next"
+        class="rounded-full border border-rose-600 p-4 text-rose-600 transition hover:bg-rose-600 hover:text-white"
+      >
+        <svg
+          class="h-5 w-5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9 5l7 7-7 7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+</section>
+
+<!-- avatares  -->
+<section>
+
+  <!-- component -->
+<div class="flex flex-wrap -mx-3 mb-5">
+  <div class="w-full max-w-full px-3 mb-6  mx-auto">
+    <div class="relative flex-[1_auto] flex flex-col break-words min-w-0 bg-clip-border rounded-[.95rem] border border-dashed border-stone-200 bg-white m-5">
+      <!-- card body  -->
+      <div class="flex-auto block py-8 px-9">
+        <div>
+          <div class="mb-9">
+            <h1 class="mb-2 text-[1.75rem] font-semibold text-dark">Nuestro equipo</h1>
+            <span class="text-[1.15rem] font-medium text-muted"> </span>
+          </div>
+          <div class="flex flex-wrap w-full">
+            <div class="flex flex-col mr-5 text-center mb-11 lg:mr-16">
+              <div class="inline-block mb-4 relative shrink-0 rounded-[.95rem]">
+                
+              </div>
+              <div class="text-center">
+                <a href="javascript:void(0)" class="text-dark font-semibold hover:text-primary text-[1.25rem] transition-colors duration-200 ease-in-out"></a>
+                <span class="block font-medium text-muted"></span>
+              </div>
+            </div>
+            <div class="flex flex-col mr-5 text-center mb-11 lg:mr-16">
+              <div class="inline-block mb-4 relative shrink-0 rounded-[.95rem]">
+                <img class="inline-block shrink-0 rounded-[.95rem] w-[150px] h-[200px]" src="https://firebasestorage.googleapis.com/v0/b/fotos-d691e.appspot.com/o/foto.jpeg?alt=media&token=b5fbde2a-8c59-43c2-90b0-e8d2f6bea06a" alt="avarat image">
+              </div>
+              <div class="text-center">
+                <a href="javascript:void(0)" class="text-dark font-semibold hover:text-primary text-[1.25rem] transition-colors duration-200 ease-in-out">Mariana Garzon Guerra</a>
+                <span class="block font-medium text-muted">-</span>
+              </div>
+            </div>
+            <div class="flex flex-col mr-5 text-center mb-11 lg:mr-16">
+              <div class="inline-block mb-4 relative shrink-0 rounded-[.95rem]">
+               
+              </div>
+              <div class="text-center">
+                <a href="javascript:void(0)" class="text-dark font-semibold hover:text-primary text-[1.25rem] transition-colors duration-200 ease-in-out"></a>
+                <span class="block font-medium text-muted"></span>
+              </div>
+            </div>
+            <div class="flex flex-col mr-5 text-center mb-11 lg:mr-16">
+              <div class="inline-block mb-4 relative shrink-0 rounded-[.95rem]">
+                <img class="inline-block shrink-0 rounded-[.95rem] w-[150px] h-[150px]" src="https://raw.githubusercontent.com/Loopple/loopple-public-assets/main/riva-dashboard-tailwind/img/avatars/avatar24.jpg" alt="avarat image">
+              </div>
+              <div class="text-center">
+                <a href="javascript:void(0)" class="text-dark font-semibold hover:text-primary text-[1.25rem] transition-colors duration-200 ease-in-out">Sebastian Garces</a>
+                <span class="block font-medium text-muted">-</span>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
 </body>
 
 <footer class="flex justify-center px-4 text-red-700 bg-white dark:text-white dark:bg-red-900">
