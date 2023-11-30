@@ -139,37 +139,19 @@
               </li>
             </ul>
             <!-- Mobile menu -->
-            <div class="lg:hidden" id="menuButton">
-              <button
-                aria-label="Open Menu"
-                title="Open Menu"
-                class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline"
-              >
-                <!-- SVG code omitted for brevity -->
-              </button>
-            </div>
+            .hamburger-menu {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+              width: 2rem;
+              height: 2rem;
+            }
 
-            <div id="menu" style="display: none;">
-              <nav>
-                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <!-- Add more menu items as needed -->
-                </ul>
-              </nav>
-            </div>
-
-            <script>
-              document.getElementById('menuButton').addEventListener('click', function() {
-                var menu = document.getElementById('menu');
-                if (menu.style.display === 'none') {
-                  menu.style.display = 'block';
-                } else {
-                  menu.style.display = 'none';
-                }
-              });
-            </script>
+            .hamburger-menu div {
+              width: 2rem;
+              height: 0.25rem;
+              background: currentColor;
+            }
     </header>
   </section>
 

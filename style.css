@@ -1,3 +1,15 @@
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+}
 
+.hamburger-menu div {
+    width: 2rem;
+    height: 0.25rem;
+    background: currentColor;
+}
     
   
