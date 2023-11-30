@@ -14,10 +14,20 @@ var input = document.getElementById('form-subscribe-Search');
 form.addEventListener('submit', function(event) {
     // Evita que la página se recargue cuando se envía el formulario
     event.preventDefault();
-
+  
     // Realiza la búsqueda
-    var result = fuse.search(input.value);
-
-    // Muestra los resultados de la búsqueda
-    console.log(result);
-});
+    var results = fuse.search(input.value);
+  
+    // Obtiene el contenedor de resultados
+    var resultsContainer = document.getElementById('results');
+  
+    // Limpia los resultados anteriores
+    resultsContainer.innerHTML = '';
+  
+    // Para cada resultado, crea un nuevo elemento y agrégalo al contenedor de resultados
+    results.forEach(function(result) {
+      var resultElement = document.createElement('p');
+      resultElement.textContent = result.item.text;
+      resultsContainer.appendChild(resultElement);
+    });
+  });
