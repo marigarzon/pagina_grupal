@@ -34,42 +34,7 @@
     </div>
   </div>
         <!-- Mobile menu -->
-        <div class="lg:hidden" id="menuButton">
-          <button
-            aria-label="Open Menu"
-            title="Open Menu"
-            class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline"
-          >
-            <div class="hamburger-menu">
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </button>
-        </div>
 
-        <div id="menu" style="display: none;">
-          <nav>
-            <ul>
-              <li><a href="index.html">Inicio</a></li>
-              <li><a href="recetas.html">Recetas</a></li>
-              <li><a href="ArticulosCocina.html">Articulos de Cocina</a></li>
-              <li><a href="registro.html">Sobre Nosotros</a></li>
-              <!-- Add more menu items as needed -->
-            </ul>
-          </nav>
-        </div>
-
-        <script>
-          document.getElementById('menuButton').addEventListener('click', function() {
-            var menu = document.getElementById('menu');
-            if (menu.style.display === 'none') {
-              menu.style.display = 'block';
-            } else {
-              menu.style.display = 'none';
-            }
-          });
-        </script>
 </header>
 </section>
 
